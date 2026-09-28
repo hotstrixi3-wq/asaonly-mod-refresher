@@ -1,0 +1,38 @@
+{
+ "data": {
+  "2430930": {
+   "_change_number": 39208051,
+   "_missing_token": false,
+   "appid": "2430930",
+   "common": {
+    "name": "ARK: Survival Ascended Dedicated Server",
+    "type": "Tool"
+   },
+   "depots": {
+    "1004": {
+     "manifests": {
+      "public": {
+       "gid": "7604377918839582995"
+      }
+     }
+    },
+    "2430931": {
+     "manifests": {
+      "public": {
+       "gid": "6068136383897274900",
+       "size": "12141718519",
+       "download": "9230072800"
+      }
+     }
+    },
+    "branches": {
+     "public": {
+      "buildid": "25535041",
+      "timeupdated": "1790364583"
+     }
+    }
+   }
+  }
+ },
+ "status": "success"
+}

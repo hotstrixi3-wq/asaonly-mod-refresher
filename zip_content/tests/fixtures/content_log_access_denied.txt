@@ -1,0 +1,38 @@
+[2026-09-25 21:30:25] Client version: 1788292693
+[2026-09-25 21:30:25] Loaded 0 apps from install folder "C:\refresher\STEAMCMD\steamapps\appmanifest_*.acf".
+
+[2026-09-25 21:30:49] Client version: 1788292693
+[2026-09-25 21:30:49] Loaded 1 apps from install folder "c:\arkservers\extinction_wp\steamapps\appmanifest_*.acf".
+[2026-09-25 21:30:49] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-09-25 21:30:51] AppID 2430930 state changed : Update Required,Fully Installed,
+[2026-09-25 21:30:51] AppID 2430930 config changed : updated depots 2430931
+[2026-09-25 21:30:51] AppID 2430930 scheduler update : Priority First, not played for 1790364651 seconds, update disabled for 0 seconds
+[2026-09-25 21:30:51] AppID 2430930 state changed : Update Required,Fully Installed,Update Queued,
+[2026-09-25 21:30:51] AppID 2430930 state changed : Update Required,Fully Installed,Update Queued,Update Running,
+[2026-09-25 21:30:51] AppID 2430930 App update changed : Running Update,
+[2026-09-25 21:30:51] AppID 2430930 App update changed : Running Update,Reconfiguring,
+[2026-09-25 21:30:52] Got 32 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 38 / Launcher 3)
+[2026-09-25 21:30:52] Moving to source priority class '8'
+[2026-09-25 21:30:52] Created download interface of type 'SteamCache' (7) to host cache13-waw1.steamcontent.com (cache13-waw1.steamcontent.com)
+[2026-09-25 21:30:52] Created download interface of type 'SteamCache' (7) to host cache14-waw1.steamcontent.com (cache14-waw1.steamcontent.com)
+[2026-09-25 21:30:52] Created download interface of type 'SteamCache' (7) to host cache10-waw1.steamcontent.com (cache10-waw1.steamcontent.com)
+[2026-09-25 21:30:52] Created download interface of type 'SteamCache' (7) to host cache12-waw1.steamcontent.com (cache12-waw1.steamcontent.com)
+[2026-09-25 21:30:52] Created download interface of type 'SteamCache' (7) to host cache9-waw1.steamcontent.com (cache9-waw1.steamcontent.com)
+[2026-09-25 21:30:52] Created download interface of type 'SteamCache' (7) to host cache3-waw1.steamcontent.com (cache3-waw1.steamcontent.com)
+[2026-09-25 21:30:52] Created download interface of type 'SteamCache' (7) to host cache8-waw1.steamcontent.com (cache8-waw1.steamcontent.com)
+[2026-09-25 21:30:52] Created download interface of type 'SteamCache' (7) to host cache7-waw1.steamcontent.com (cache7-waw1.steamcontent.com)
+[2026-09-25 21:30:52] HTTP/2 available
+[2026-09-25 21:30:52] Created ipv4-only http client
+[2026-09-25 21:30:52] HTTPS (SteamCache,495) - cache13-waw1.steamcontent.com (155.133.230.26:443 / 155.133.230.26:443, host: cache13-waw1.steamcontent.com): cache13-waw1.steamcontent.com/depot/1004/manifest/7604377918839582995/5/17213626320292546012 - manifest request received 200 (OK) HTTP response
+[2026-09-25 21:30:53] HTTPS (SteamCache,492) - cache10-waw1.steamcontent.com (155.133.230.23:443 / 155.133.230.23:443, host: cache10-waw1.steamcontent.com): cache10-waw1.steamcontent.com/depot/2430931/manifest/6068136383897274900/5/17561710043908279381 - manifest request received 200 (OK) HTTP response
+[2026-09-25 21:30:54] CDepotDownloadMgr::BYldRequestDepotManifest(App: 2430930, Depot: 2430931, Manifest: 8699400601246504390, branch: ): Failed to get manifest request code, 'Access Denied'
+[2026-09-25 21:30:54] AppID 2430930 update canceled : Failed downloading 1 manifests (No connection)
+[2026-09-25 21:30:54] AppID 2430930 App update changed : Running Update,Reconfiguring,Stopping,
+[2026-09-25 21:30:54] AppID 2430930 App update changed : Running Update,Stopping,
+[2026-09-25 21:30:54] AppID 2430930 App update changed : None
+[2026-09-25 21:30:54] AppID 2430930 state changed : Update Required,Fully Installed,Update Queued, (No connection)
+[2026-09-25 21:30:54] AppID 2430930 state changed : Update Required,Fully Installed, (Update delayed for 30 secs)
+[2026-09-25 21:30:54] AppID 2430930 scheduler finished : removed from schedule (result No connection, state 0xe) 
+[2026-09-25 21:30:55] HTTP (SteamCache,389) - cache7-waw1.steamcontent.com (0.0.0.0:0 / 0.0.0.0:0, host: cache7-waw1.steamcontent.com): Closing connection
+[2026-09-25 21:30:55] HTTP (SteamCache,390) - cache8-waw1.steamcontent.com (0.0.0.0:0 / 0.0.0.0:0, host: cache8-waw1.steamcontent.com): Closing connection
+[2026-09-25 21:30:55] HTTP (SteamCache,87) - cache3-waw1.steamcontent.com (0.0.0.0:0 / 0.0.0.0:0, host: cache3-waw1.steamcontent.com): Closing connection

@@ -1,0 +1,120 @@
+{
+  "description": "Syntetyczne 3 mapy; każda ma lokalną oś 0..300; koordynator uruchamia je sekwencyjnie po READY",
+  "warning_offsets": [
+    0,
+    60,
+    120,
+    180,
+    240
+  ],
+  "doexit_offset": 300,
+  "servers": [
+    {
+      "name": "Mapa A",
+      "rcon_port": "31001",
+      "mods": [
+        "SYN-01",
+        "SYN-02",
+        "SYN-03"
+      ],
+      "lines": [
+        [
+          0,
+          "ServerChat Restart za 5 minut - aktualizacja modow"
+        ],
+        [
+          60,
+          "ServerChat Restart za 4 minuty - aktualizacja modow"
+        ],
+        [
+          120,
+          "ServerChat Restart za 3 minuty - aktualizacja modow"
+        ],
+        [
+          180,
+          "ServerChat Restart za 2 minuty - aktualizacja modow"
+        ],
+        [
+          240,
+          "ServerChat Restart za 1 minute - aktualizacja modow"
+        ],
+        [
+          300,
+          "DoExit"
+        ]
+      ]
+    },
+    {
+      "name": "Mapa B",
+      "rcon_port": "31002",
+      "mods": [
+        "SYN-01",
+        "SYN-04",
+        "SYN-05",
+        "SYN-06"
+      ],
+      "lines": [
+        [
+          0,
+          "ServerChat Restart za 5 minut - aktualizacja modow"
+        ],
+        [
+          60,
+          "ServerChat Restart za 4 minuty - aktualizacja modow"
+        ],
+        [
+          120,
+          "ServerChat Restart za 3 minuty - aktualizacja modow"
+        ],
+        [
+          180,
+          "ServerChat Restart za 2 minuty - aktualizacja modow"
+        ],
+        [
+          240,
+          "ServerChat Restart za 1 minute - aktualizacja modow"
+        ],
+        [
+          300,
+          "DoExit"
+        ]
+      ]
+    },
+    {
+      "name": "Mapa C",
+      "rcon_port": "31003",
+      "mods": [
+        "SYN-03",
+        "SYN-07",
+        "SYN-08",
+        "SYN-09"
+      ],
+      "lines": [
+        [
+          0,
+          "ServerChat Restart za 5 minut - aktualizacja modow"
+        ],
+        [
+          60,
+          "ServerChat Restart za 4 minuty - aktualizacja modow"
+        ],
+        [
+          120,
+          "ServerChat Restart za 3 minuty - aktualizacja modow"
+        ],
+        [
+          180,
+          "ServerChat Restart za 2 minuty - aktualizacja modow"
+        ],
+        [
+          240,
+          "ServerChat Restart za 1 minute - aktualizacja modow"
+        ],
+        [
+          300,
+          "DoExit"
+        ]
+      ]
+    }
+  ]
+}

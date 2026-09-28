@@ -1,0 +1,50 @@
+name: Extract ZIP
+"on":
+  workflow_dispatch:
+  push:
+    branches: [ "arena/01a0e886-asaonly-mod-refresher" ]
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: arena/01a0e886-asaonly-mod-refresher
+      - name: Download and extract
+        run: |
+          echo "Downloading asset..."
+          gh release download v3.86.7 --pattern "*.zip" --dir /tmp --clobber
+          ls -lh /tmp/*.zip
+          unzip -l /tmp/ASAonly-V3.86.7.zip | head -n 200
+          rm -rf /tmp/extracted
+          mkdir -p /tmp/extracted
+          unzip /tmp/ASAonly-V3.86.7.zip -d /tmp/extracted
+          ls -R /tmp/extracted | head -n 1000
+          rm -rf ./zip_content
+          mkdir -p ./zip_content
+          cp -r /tmp/extracted/* ./zip_content/ 2>/dev/null || cp -r /tmp/extracted/. ./zip_content/
+          find ./zip_content -type f | sort > ./zip_file_list.txt
+          cat ./zip_file_list.txt
+          echo "=== TEXT FILES ==="
+          for f in $(find ./zip_content -type f | head -n 50); do
+            echo "--- $f ($(wc -c < "$f") bytes) ---"
+            file "$f" || true
+            if [[ $(wc -c < "$f") -lt 50000 ]]; then
+              head -n 100 "$f" || true
+            fi
+            echo ""
+          done
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add zip_content zip_file_list.txt
+          git status
+          git commit -m "Add extracted zip content from v3.86.7 [skip ci]" || echo "No changes"
+          git push origin arena/01a0e886-asaonly-mod-refresher || echo "Push failed, trying pull rebase"
+          git pull --rebase origin arena/01a0e886-asaonly-mod-refresher || true
+          git push origin arena/01a0e886-asaonly-mod-refresher || true

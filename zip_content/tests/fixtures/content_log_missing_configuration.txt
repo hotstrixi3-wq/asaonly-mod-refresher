@@ -1,0 +1,6 @@
+
+
+[2026-09-26 14:25:48] Client version: 1788292693
+[2026-09-26 14:25:48] Loaded 0 apps from install folder "c:\arkservers\asa updates refresher\steamapps\appmanifest_*.acf".
+[2026-09-26 14:25:48] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-09-26 14:25:54] Failed installing AppID 2430930 (Missing configuration)
