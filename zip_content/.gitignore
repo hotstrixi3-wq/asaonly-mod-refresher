@@ -1,9 +1,0 @@
-# Logs
-WIEDZA_O_PROGRAMIE/dziennik-zdarzen.txt
-WIEDZA_O_PROGRAMIE/dziennik-zdarzen*.txt
-WIEDZA_O_PROGRAMIE/asa_debug.log
-WIEDZA_O_PROGRAMIE/PADY/
-__pycache__/
-*.pyc
-CONFIG_MAPS_TABS/
-CONFIG_SECRET_RCON/
